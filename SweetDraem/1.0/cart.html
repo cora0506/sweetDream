@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SweetDream_1.0</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- JS -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- nav -->
+    <nav id="navigation">
+        <div class="container">
+            <div class="block">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">主選單</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">SweetDream
+                            <!--待優化 <img src="images/logo4.png" alt="Logo"> -->
+                        </a>
+                    </div>
+            
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right " id="top-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#Products">Products</a></li>
+                            <li><a href="#slider">About</a></li>
+                            <li><a href="login_modal.html"><img src="images/icon-member.png"></a></li>
+                            <!-- 待優化<button onclick="open_login()" id='member_login'></button> -->
+                            <!-- 待優化<li>   
+                                <ul class="top-menu text-right list-inline"> -->
+                             <li class="dropdown cart-nav dropdown-slide">
+                                        <a href="#!" class="dropdown-toggle" data-toggle="dropdown"
+                                            data-hover="dropdown"><img  src="images/icon-shop.png"></a>
+                                        <div class="dropdown-menu cart-dropdown">
+                                            <!-- Cart Item -->
+                                            <div class="media">
+                                                <a class="pull-left" href="#!">
+                                                    <img class="media-object" src="images/Products/小經典巧克力.png"
+                                                        alt="image" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading"><a href="#!">經典巧克力</a></h4>
+                                                    <div class="cart-price">
+                                                        <span>1 x</span>
+                                                        <span>799</span>
+                                                    </div>
+                                                    <h5><strong>$799</strong></h5>
+                                                </div>
+                                                <a href="#!" class="remove"><i class="tf-ion-close"></i></a>
+                                            </div><!-- / Cart Item -->
+                                            <!-- Cart Item -->
+                                            <div class="media">
+                                                <a class="pull-left" href="#!">
+                                                    <img class="media-object" src="images/Products/小草莓塔.png"
+                                                        alt="image" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading"><a href="#!">草莓塔</a></h4>
+                                                    <div class="cart-price">
+                                                        <span>1 x</span>
+                                                        <span>200</span>
+                                                    </div>
+                                                    <h5><strong>$200</strong></h5>
+                                                </div>
+                                                <a href="#!" class="remove"><i class="tf-ion-close"></i></a>
+                                            </div><!-- / Cart Item -->
+
+                                            <div class="cart-summary">
+                                                <span>Total</span>
+                                                <span class="total-price">$999</span>
+                                            </div>
+                                            <ul class="text-center cart-buttons">
+                                                <li><a href="cart.html" class="btn btn-small">購物車</a></li>
+                                                <li><a href="checkout.html"
+                                                        class="btn btn-small btn-solid-border">結帳</a></li>
+                                            </ul>
+                                        </div>
+
+                             </li><!-- / Cart -->
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+<section style = "padding-top: 50px;" class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="content">
+					<h1 class="page-name">Cart</h1>
+					<ol class="breadcrumb">
+						<li><a href="index.html"><h2>Home</h2></a></li>
+						<li class="active">cart</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<div class="page-wrapper">
+  <div class="cart shopping">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="block">
+            <div class="product-list">
+              <form method="post">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="">Item Name</th>
+                      <th class="">Item Price</th>
+                      <th class="">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="">
+                      <td class="">
+                        <div class="product-info">
+                          <img style="width: 80px;height: 100px;" src="images/Products/經典巧克力.png" alt="" />
+                          <a href="#!">經典巧克力</a>
+                        </div>
+                      </td>
+                      <td class="price">$799</td>
+                      <td class="">
+                        <a class="product-remove" href="#!"><i class="fa fa-trash"></i></a>
+                      </td>
+                    </tr>
+                    <tr class="">
+                      <td class="">
+                        <div class="product-info">
+                          <img style="width: 80px;height: 100px;" src="images/Products/小草莓塔.png" alt="" />
+                          <a href="#!">小草莓塔</a>
+                        </div>
+                      </td>
+                      <td class="price">$200</td>
+                      <td class="">
+                        <a class="product-remove" href="#!"><i class="fa fa-trash"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="btn btn-primary pull-right">結帳</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- footer -->
+<section id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-2">
+				<div class="block wow fadeInLeft " data-wow-delay="100ms">
+					<h3 >CONTACT <span>INFO</span></h3>
+					<div class="info">
+						<ul>
+							<li>
+								<h4><i class="fa fa-phone"></i>My phone</h4>
+								<p>0912345678</p>
+
+							</li>
+							<li>
+								<h4><i class="fa fa-envelope"></i>E mail</h4>
+								<p>a22822819@gmail.com</p>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-6">
+				<div class="block wow fadeInLeft" data-wow-delay="500ms">
+					<div class="social-media-link">
+						<h3>Follow <span>US</span></h3>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fa fa-map-marker"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!--footer-bottom  start-->
+<footer id="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="block">
+					<p>Copyright &copy; 2021 - All Rights Reserved.Design and Developed By Cora</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Touchpin -->
+    <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <!-- Instagram Feed Js -->
+    <script src="plugins/instafeed/instafeed.min.js"></script>
+    <!-- Video Lightbox Plugin -->
+    <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+    <!-- Count Down Js -->
+    <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
+
+    <!-- slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/slick/slick-animation.min.js"></script>
+
+    <!-- Google Mapl -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Js File -->
+    <script src="js/script.js"></script>
+    
+
+
+  </body>
+  </html>
